@@ -1,0 +1,40 @@
+[theme]
+# Mobile-optimized theme
+base = "light"
+primaryColor = "#00966E"       # Bulgarian green
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F5F7FA"  # Softer grey
+textColor = "#1A1A2E"          # Better contrast for reading
+font = "sans serif"
+
+# Custom colors for different sections
+accentColor = "#D62612"        # Bulgarian red
+secondaryColor = "#F0B429"     # Gold accent for highlights
+warningColor = "#D62612"       # Red for errors/warnings
+
+[server]
+# Mobile performance
+maxUploadSize = 20
+enableCORS = false
+enableXsrfProtection = true
+headless = true
+
+# Optimize for smaller screens
+runOnSave = false
+
+# Client-side settings for better mobile UX
+[client]
+showErrorDetails = true
+showSidebarNavigation = false   # Hide sidebar on mobile for more space
+toolbarMode = "minimal"
+
+# Global settings for language learning app
+[global]
+developmentMode = false
+disableWidgetStateDuplicationWarning = true
+
+# UI/UX tweaks for your specific app features
+[ui]
+# Hide some Streamlit branding for cleaner look
+hideFooter = false
+hideTopBar = false
